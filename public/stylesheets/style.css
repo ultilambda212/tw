@@ -1,8 +1,62 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#meniu {
+  color: red;
 }
 
-a {
-  color: #00B7FF;
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+	font-size: 15px;
+  }
 }
+
+@media screen and (max-width: 200px) {
+  body {
+    background-color: olive;
+	font-size: 5px;
+  }
+}
+
+body {
+  background-color: lightblue;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: lightblue;
+}
+
+a:hover {
+  background-color: red;
+  font-style: italic;
+}
+
+a:visited {
+  color: blue;
+}
+
+section {
+  color: brown;
+}
+
+#footer {
+  color: blue;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+#div4{
+	text-align: left;
+	display: inline-block;
+}
+th,td{
+	border:1px solid black;
+	padding:5px;
+	}
+	td:empty{
+		padding:20px;
+	}
+	table{
+		border-collapse:collapse;
+		empty-cells:show;
+	}

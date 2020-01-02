@@ -1,0 +1,48 @@
+<header>
+  <a href="/"><img src="/images/img_fact.png" alt="logo" height="75" /></a>
+  <img src="/images/slogan.png" alt="Suntem la dispozitia ta" height="75" />
+  <div id="div4">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li>
+        <a>Informatii</a>
+        <ul>
+          <li><a href="/pages/contactare">Contactare</a></li>
+          <li><a href="/pages/inscriere">Inscriere</a></li>
+        </ul>
+      </li>
+    </ul>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+      Conectare
+    </button>
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="/pages/conectat" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+          <img src="/images/img_fact.png" alt="Avatar" class="avatar" />
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input id="uname" type="text" placeholder="Username" name="uname" required />
+
+          <label for="psw"><b>Parola</b></label>
+          <input id="psw" type="password" placeholder="Parola" name="psw" required />
+
+          <button type="submit">Conectare</button>
+          <label><input type="checkbox" checked="checked" name="remember" />
+            Tine-ma minte</label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+            Anulare
+          </button>
+          <span class="psw">Ai uitat <a href="#">parola?</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
