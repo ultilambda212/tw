@@ -19,6 +19,7 @@ function signUp(event) {
     ajax('POST', '/users', params, function() {
       console.log(this.responseText);
     });
+    alert("Signed up");
   } else {
     signUpForm.reportValidity();
   }

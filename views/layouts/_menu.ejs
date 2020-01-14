@@ -12,32 +12,32 @@
         </ul>
       </li>
     </ul>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+    <button onclick="document.getElementById('log-in').style.display='block'" style="width:auto;">
       Conectare
     </button>
 
-    <div id="id01" class="modal">
-      <form class="modal-content animate" action="/pages/conectat" method="post">
+    <div id="log-in" class="modal">
+      <form id="log-in-form" class="modal-content animate">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          <span onclick="document.getElementById('log-in').style.display='none'" class="close"
             title="Close Modal">&times;</span>
           <img src="/images/img_fact.png" alt="Avatar" class="avatar" />
         </div>
 
         <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input id="uname" type="text" placeholder="Username" name="uname" required />
+          <label for="username"><b>Username</b></label>
+          <input id="username" type="text" placeholder="Username" name="username" required />
 
-          <label for="psw"><b>Parola</b></label>
-          <input id="psw" type="password" placeholder="Parola" name="psw" required />
+          <label for="password"><b>Parola</b></label>
+          <input id="password" type="password" placeholder="Parola" name="password" required />
 
-          <button type="submit">Conectare</button>
+          <button type="submit" id="connect">Conectare</button>
           <label><input type="checkbox" checked="checked" name="remember" />
             Tine-ma minte</label>
         </div>
 
         <div class="container" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+          <button type="button" onclick="document.getElementById('log-in').style.display='none'" class="cancelbtn">
             Anulare
           </button>
           <span class="psw">Ai uitat <a href="#">parola?</a></span>
@@ -45,4 +45,5 @@
       </form>
     </div>
   </div>
+  <script src="/javascripts/sessions.js"></script>
 </header>
