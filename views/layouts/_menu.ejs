@@ -40,10 +40,13 @@
           <button type="button" onclick="document.getElementById('log-in').style.display='none'" class="cancelbtn">
             Anulare
           </button>
-          <span class="psw">Ai uitat <a href="#">parola?</a></span>
+          <span class="password">Ai uitat <a href="#">parola?</a></span>
         </div>
       </form>
     </div>
   </div>
+  <% if(locals.username) { %>
+    <p id="username"><span class="username"> Buna, <%= username %></span></p>
+  <% } %>
   <script src="/javascripts/sessions.js"></script>
 </header>

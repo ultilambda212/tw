@@ -1,0 +1,92 @@
+<hr />
+<form id="invoice">
+  <table>
+    <tr>
+      <td>
+        Nume:
+      </td>
+      <td>
+        <input type="text" placeholder="Nume" name="name" required/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Prenume:
+      </td>
+      <td>
+        <input type="text" placeholder="Prenume" name="surname" required/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Telefon:
+      </td>
+      <td>
+        <select>
+          <option> +04 </option>
+          <option> +05 </option>
+        </select>
+        <input type="tel" placeholder="0000000000" name="tel" required />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Adresa:
+      </td>
+      <td>
+        <input type="text" placeholder="Address" name="address" required />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Try guessing your CNP and hope that's yours:
+      </td>
+      <td>
+        <input type="range" placeholder="CNP" name="you better hope this is it" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        E-mail:
+      </td>
+      <td>
+        <input type="email" placeholder="E-mail" name="e-mail"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sex:
+      </td>
+      <td>
+        <input type="radio" name="Sex" /> Barbat
+        <input type="radio" name="Sex" /> Femeie
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Description:
+      </td>
+      <td>
+        <input type="textarea" name="Description" id="colorDescription" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        This is worthless:
+      </td>
+      <td>
+        <input type="checkbox" name="so damn useless" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="Submit" value="Submit" name="submit" />
+      </td>
+    </tr>
+  </table>
+  <button id="show-contacts"> Show contacts for invoiceing</button>
+  <button onclick="deleteFirstLi()"> Delete first li </button>
+  <div id="container-contacts"></div>
+  <div onload="loaded()"></div>
+  <script src="/javascripts/invoices.js"></script>
+</form>

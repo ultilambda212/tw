@@ -15,10 +15,14 @@
   <link rel="stylesheet" type="text/css" href="/stylesheets/responsive-table.css" />
 </head>
 
-<body>
+<body onclick="showCoordinates(event)" onload="date()" onkeydown="checkIfSpecial(event)">
   <%- include _menu %>
   <%- body %>
+  <script src="/javascripts/betterlook.js"></script>
+  <br><br>
+  <p id="coords"></p>
   <footer>
+    <p id="date"></p>
     <p id="footer">© Numarul 1 in Romania</p>
   </footer>
 </body>

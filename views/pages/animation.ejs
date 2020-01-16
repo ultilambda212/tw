@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animatie</title>
+
+<style>
+	div#soare {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		position: absolute;
+		top: 0px;
+		animation-name: rasarit;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	div#fereastra {
+		width: 500px;
+		height: 250px;
+		background: skyblue;
+		border: 7px inset brown;
+		position: relative;
+		overflow: hidden;
+		animation-name: sky;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes rasarit {
+		0% {
+			background: red;
+			left: 0px;
+		}
+		50% {
+			background: yellow;
+			left: 250px;
+		}
+		100% {
+			background: red;
+			left: 500px;
+		}
+	}
+	@keyframes sky {
+		0% {
+			background: black;
+		}
+		25% {
+			background: navy;
+		}
+		50% {
+			background: lightblue;
+		}
+		75% {
+			background: navy;
+		}
+		100% {
+			background: black;
+		}
+	}
+</style>
+
+</head>
+<body onbeforeunload="return leaving()">
+<div class="loader" id="load"></div>
+<button id="Micsoreaza"> Micsoreaza </button>
+<h1 id="state"></h1>
+<div id="fereastra">
+<div id="soare"></div>
+</div>
+<div id="done"></div>
+<script src="/javascripts/soare.js"></script>
+</body>
+</html>

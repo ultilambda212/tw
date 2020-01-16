@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Ion",
+    "surname": "Ion",
+    "tel": "+400030000000",
+    "address": "Calea Clorilor",
+    "cnp": 123,
+    "e-mail": "asd@asd",
+    "Sex": "Barbat",
+    "Description": "Fast delivery pls"
+  },
+  {
+    "name": "Asd",
+    "surname": "Asd",
+    "tel": "+400035550000",
+    "address": "Calea Rosilor",
+    "cnp": 1223,
+    "e-mail": "affd@asd",
+    "Sex": "Femeie",
+    "Description": ""
+  }
+]

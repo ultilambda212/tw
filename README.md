@@ -46,7 +46,6 @@ express --ejs --git
 
 # add dependencies
 npm install express-ejs-layouts --save # vezi: https://github.com/Soarez/express-ejs-layouts
-npm install tingodb --save # vezi: https://github.com/sergeyksv/tingodb
 
 # install dependencies in package.json
 npm install

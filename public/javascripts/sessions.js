@@ -10,18 +10,21 @@ function ajax(method, path, params, cb) {
 
 var logInForm = document.getElementById('log-in-form');
 function logIn(event) {
-  console.log(event);
   event.preventDefault();
   if(logInForm.checkValidity()){
     var params = {};
     for (element of logInForm.elements) {
       params[element.name] = element.value;
     }
-    console.log("ajax");
     ajax('POST', '/sessions', params, function() {
-      console.log(this.responseText);
+      console.log("???");
+      if (JSON.parse(this.responseText)["result"] == "ok"){
+       document.cookie = "username=" + params.username;
+       window.location = "/pages/conectat"
+      } else {
+        alert("Logare esuata.");
+      }
     });
-    alert("Logged in");
   } else {
     logInForm.reportValidity();
   }

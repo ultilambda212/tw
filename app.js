@@ -1,18 +1,18 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var expressLayouts = require('express-ejs-layouts');
-var MongoClient = require('mongodb').MongoClient;
-var ObjectId = require('mongodb').ObjectId;
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const expressLayouts = require('express-ejs-layouts');
+const MongoClient = require('mongodb').MongoClient;
+const ObjectId = require('mongodb').ObjectId;
 
-var usersRouter = require('./routes/users');
-var sessionsRouter = require('./routes/sessions');
-var pagesRouter = require('./routes/pages');
-var indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+const pagesRouter = require('./routes/pages');
+const sessionsRouter = require('./routes/sessions');
+const indexRouter = require('./routes/index');
 
-var app = express();
+const app = express();
 const mongo_uri = 'mongodb://localhost:27017';
 
 MongoClient.connect(mongo_uri, { useNewUrlParser: true, useUnifiedTopology: true, poolSize: 10 })
